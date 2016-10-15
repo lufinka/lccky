@@ -1,3 +1,3 @@
-window.onload = function(){
-  console.log(111)
-};
+(function(){
+    console.log(1)
+})(window);
