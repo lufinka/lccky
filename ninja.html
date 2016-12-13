@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ninja</title>
+</head>
+
+<body>
+    <div id="ky">asda</div>
+    <ul>
+        <li>001</li>
+        <li>002</li>
+        <li>003</li>
+        <li>004</li>
+        <li>005</li>
+        <li>006</li>
+        <li>007</li>
+        <li>008</li>
+        <li>009</li>
+        <li>010</li>
+    </ul>
+    <script>
+        function merge(root) {
+            for (var i = 0; i < arguments.length; i++) {
+                for (var z in arguments[i]) {
+                    root[z] = arguments[i][z]
+                }
+            }
+            return root;
+        };
+        var aaa = merge({
+            'name': 'ky'
+        }, {
+            'age': 25
+        }, {
+            'job': 'fn'
+        });
+
+        /**************************************************************/
+
+        function mult(obj) {
+            return obj * Math.max.apply(Math, Array.prototype.slice.call(arguments, 1))
+        }
+        mult(3, 5, 4, 7);
+        /**************************************************************/
+        var fn = function ky() {
+            console.log(fn.name)
+            console.log(this.length)
+        };
+
+        /**************************************************************/
+
+        function ky(obj, name, fn) {
+            var old = obj[name];
+            obj[name] = function() {
+                if (fn.length == arguments.length) {
+                    console.log(11)
+                    return fn.apply(this, arguments);
+                } else if (typeof old == 'function') {
+                    return old.apply(this, arguments);
+                }
+            }
+        }
+        var o = {
+            values: ['asd', 'dfs']
+        };
+        ky(o, 'find', function(name) {
+            return this.values;
+        });
+
+        /**************************************************************/
+
+        function bind(obj, ev) {
+            return function() {
+                return obj[ev].apply(obj)
+            }
+        }
+        var button = {
+            clicked: false,
+            click: function() {
+                console.log(this == elem, "This is the elem, not the object button")
+                this.clicked = true;
+                console.log(button.clicked, "The button has been clicked");
+            }
+        }
+        var elem = document.getElementById("ky");
+        elem.addEventListener("click", bind(button, 'click'), false);
+
+        /**************************************************************/
+
+        Function.prototype.curry = function() {
+            var fn = this;
+            args = Array.prototype.slice.call(arguments)
+            return function() {
+                return fn.apply(this, args);
+            }
+        }
+        String.prototype.curry = String.prototype.split.curry(/,\s*/);
+        var res = ('asd,sfd,glskl').curry();
+
+        /**************************************************************/
+
+        Function.prototype.memoized = function(key) {
+            this._val = this._val || {};
+            return this._val[key] !== undefined ? this._val[key] : this._val[key] = this.apply(this, arguments);
+        }
+
+        function ky2(num) {
+            return num != 1;
+        };
+
+        /**************************************************************/
+
+        Function.prototype.kk = function() {
+            var fn = this;
+            arguments[0].push(100);
+            return fn.apply(fn, arguments);
+        }
+
+        function lu() {
+            var z = 0;
+            for (var i = 0; i < arguments[0].length; i++) {
+                z += arguments[0][i];
+            }
+            return z;
+        }
+        lu.kk([1, 2, 3, 4, 5, 6])
+
+        /**************************************************************/
+
+        var oLi = document.getElementsByTagName('li');
+        for (var i = 0; i < oLi.length; i++) {
+            (function(index) {
+                oLi[index].onclick = function() {
+                    console.log(oLi[index].innerHTML)
+                }
+            })(i)
+        }
+        /**************************************************************/
+
+        function Ninja() {
+            this.ky = true;
+        }
+        var zk = new Ninja();
+        Ninja.prototype.say = function() {
+            return this.ky;
+        }
+        zk.constructor.prototype.kk = function() {
+            return 11
+        }
+        var zk2 = new zk.constructor()
+        var ky = function() {};
+        ky.prototype = {
+            say: Ninja.prototype.say
+        };
+        var l = new ky();
+        l.prototype = new Ninja();
+        //console.log(l)
+        //console.log(l instanceof ky)
+        //console.log(l instanceof Ninja) false
+        //console.log(l instanceof Object)
+        //console.log(zk2,zk)
+        //console.log(zk instanceof Ninja)
+        //console.log(zk.constructor == Ninja)
+
+        /**************************************************************/
+
+        function pro1() {};
+        pro1.prototype.say = function() {};
+
+        function pro2() {};
+        pro2.prototype = new pro1();
+        var jkl = new pro2();
+        //console.log(jkl instanceof Object);
+
+        /**************************************************************/
+
+        Array.prototype.forEach = function(fn, cb) {
+            for (var i = 0; i < this.length; i++) {
+                fn.call(cb || null, this[i], i, this);
+            }
+        }
+        var arr = [];
+        //[1,5,3].forEach(console.error,console.log)
+        
+        /**************************************************************/
+        
+    </script>
+</body>
+
+</html>

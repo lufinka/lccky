@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
     <title>Document</title>
     <link rel="stylesheet" href="wrap.css">
 </head>
+
 <body>
-    <div class="ky kk">
-        <div class="cont">
-            <ul>
-                <li>asd</li>
-                <li>asdas</li>
-                <li>saf</li>
-                <li>fas</li>
-                <li>fa</li>
-                <li>afs</li>
-            </ul>
-        </div>
-    </div>
+    <style>
+        .longPress {
+            width: 200px;
+            height: 200px;
+            background-color: #428bca;
+        }
+    </style>
+
+
+    <div class="longPress" id="longPress"></div>
 </body>
+<script>
+    function lp(opts) {
+        this.opts = opts;
+        this.init();
+    };
+
+    lp.prototype.init = function() {
+        this.bindEvent();
+    };
+
+    lp.prototype.bindEvent = function() {
+        var self = this;
+        var timer;
+        self.opts.context.ontouchstart = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            timer = setTimeout(self.opts.fn, self.opts.time);
+        };
+
+        self.opts.context.ontouchend = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            clearTimeout(timer);
+            if (self.opts.once) {
+                self.opts.context.ontouchstart = null;
+            }
+        };
+    };
+
+    var z = new lp({
+        'context': document.getElementById('longPress'),
+        'fn': function() {
+            console.log(this)
+        },
+        'time': 1000
+    });
+</script>
+
 </html>
