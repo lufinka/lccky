@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <title>Document</title>
+    <link rel="stylesheet" href="wrap.css">
+</head>
+
+<body>
+    <style>
+        .longPress {
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+        }
+    </style>
+
+
+    <div class="longPress" id="longPress"></div>
+    <div class="longPress" id="aa"></div>
+</body>
+<script>
+    function lp(opts) {
+        this.opts = opts;
+        this.init();
+    };
+
+    lp.prototype.init = function() {
+        this.bindEvent();
+    };
+
+    lp.prototype.bindEvent = function() {
+        var self = this;
+        var timer;
+        var tfn = function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            timer = setTimeout(self.opts.fn, self.opts.time);
+        };
+        self.opts.context.addEventListener('touchstart',tfn);
+
+        self.opts.context.addEventListener('touchend',function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            clearTimeout(timer);
+            if (self.opts.once) {
+                self.opts.context.removeEventListener('touchstart',tfn);
+            }
+        });
+    };
+
+    var z = new lp({
+        'context': document.getElementById('longPress'),
+        'fn': function() {
+            console.log(1)
+        },
+        'time': 1000,
+        'once':true
+    });
+    document.getElementById('aa').ontouchstart = function(){
+        console.log(1)
+    }
+</script>
+
+</html>
