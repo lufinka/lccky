@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="http://f.hiphotos.baidu.com/image/pic/item/5ab5c9ea15ce36d358d27ee43ef33a87e850b114.jpg" alt="">
+    <img src="http://e.hiphotos.baidu.com/image/pic/item/72f082025aafa40f6f6d3209af64034f79f019be.jpg" alt="">
+    <img src="http://c1.neweggimages.com.cn/NeweggPic2/Description/A09-341-51M_01.jpg" alt="">
+    <img src="http://img.xiami.net/images/album/img24/1324/21002656601453703746.jpeg" alt="">
+    <img src="http://a1894.phobos.apple.com/us/r1000/067/Purple/v4/6a/e4/81/6ae4819a-2564-944d-c3ba-340528c3f75c/mzl.rqorxbdt.png" alt="">
+    <script>
+        var imgs = document.getElementsByTagName('img'),
+            timer, index = 0,
+            times = 0,
+            ll = imgs.length;
+
+        function load(index) {
+            if (index == ll && imgs[index - 1].complete) {
+                console.log(11)
+            } else {
+                if (imgs[index].complete) {
+                    arguments.callee(++index);
+                } else {
+                    setTimeout(function() {
+                        load(index);
+                    }, 1000)
+                }
+            }
+        }
+        load(index);
+    </script>
+</body>
+
+</html>

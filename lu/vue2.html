@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta content="telephone=no" name="format-detection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/common/app_common.css">
+    <link rel="stylesheet" href="styles/common/niub_core.css">
+    <link rel="stylesheet" href="styles/member.css">
+</head>
+
+<body>
+    <div class="meber">
+        <div class="meber-tabs-item">
+            <ul class="table">
+                <li class="cell active">
+                    <p>报名成功<span>(5)</span></p>
+                </li>
+                <li class="cell">
+                    <p>取消报名<span>(5)</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="meber-list">
+        <div class="success-list list-item" id="success-list" style="display:block;">
+            <ul>
+                <li class="drop-item" v-for="item in items" v-on:click="rander(item)">
+                    <div class="table">
+                        <div class="cell avat">
+                            <div class="user-icon avatar star">
+                                <span class="user-avatar" v-bind:style="{backgroundImage:'url('+item.avtatar+')'}"></span>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="cell info">
+                            <h2 v-text="item.nicky|ff"></h2>
+                            <h3><span>{{item.sex | ff}}</span><span class="yearold">{{item.age | ff}}岁</span><span class="value">善咖值：10</span></h3>
+                            <p>{{item.time}}</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="cancel-list list-item" style="display:none;">
+            <ul>
+                <li class="drop-item">
+                    <div class="table">
+                        <div class="cell avat">
+                            <div class="user-icon avatar org">
+                                <span class="user-avatar" style="background-image:url(https://o5wxhp84r.qnssl.com/2016_11_10_11_20_45_5823e78dac7c6.jpg)"></span>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="cell info">
+                            <h2><span class="fl">可爱个西瓜</span><span class="fr">10小时前</span></h2>
+                            <p class="refund">未退款</p>
+                            <h3>取消原因:计划有变，没时间参与了。</h3>
+                        </div>
+                    </div>
+                </li>
+                <li class="drop-item">
+                    <div class="table">
+                        <div class="cell avat">
+                            <div class="user-icon avatar org">
+                                <span class="user-avatar" style="background-image:url(https://o5wxhp84r.qnssl.com/2016_11_10_11_20_45_5823e78dac7c6.jpg)"></span>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="cell info">
+                            <h2><span class="fl">可爱个西瓜</span><span class="fr">10小时前</span></h2>
+                            <p class="refund">已退款</p>
+                            <h3>取消原因:计划有变，没时间参与了。</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="info" :class="{animated:is,fadeInRight:true}">
+        <header>
+            <div class="table">
+                <div class="cell avat">
+                    <div class="user-icon avatar star">
+                        <span class="user-avatar" v-bind:style="{backgroundImage:'url('+items[0].avtatar+')'}"></span>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="cell info">
+                    <h2>{{items[0].nicky}}</h2>
+                    <p>{{items[0].time}}</p>
+                </div>
+                <div class="cell active agree">
+                    <div class="btn">同意</div>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="call"><a class="table" v-bind:href="items[0].phone"><i class="cell"></i><span class="cell">打电话</span></a></div>
+                <div class="message"><a class="table" v-bind:href="items[0].phone"><i class="cell"></i><span class="cell">发短信</span></a></div>
+            </div>
+        </header>
+        <section class="infodata">
+            <ul>
+                <li data-item="姓名">
+                    <p>{{items[0].name}}</p>
+                </li>
+                <li data-item="手机">
+                    <p>{{items[0].phone}}</p>
+                </li>
+                <li data-item="邮箱">
+                    <p>{{items[0].email}}</p>
+                </li>
+                <li data-item="性别">
+                    <p>{{items[0].sex}}</p>
+                </li>
+                <li data-item="年龄">
+                    <p>{{items[0].age}}</p>
+                </li>
+                <li data-item="单位/学校">
+                    <p>{{items[0].school}}</p>
+                </li>
+                <li data-item="地址">
+                    <p>{{items[0].address}}</p>
+                </li>
+                <li data-item="人数">
+                    <p>{{items[0].num}}</p>
+                </li>
+                <li data-item="备注">
+                    <p>{{items[0].remark}}</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script type="text/javascript" src="scripts/vender/zepto.min.js"></script>
+    <script src="vue.min.js"></script>
+    <script src="scripts/common/niub_core.js"></script>
+    <script src="scripts/common/app_common.js"></script>
+    <script src="scripts/meber.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ky">
+        <kspan></kspan>
+        <kdiv></kdiv>
+    </div>
+</body>
+<script src="vue.min.js"></script>
+<script>
+    var Child = {
+        template:'<span>aaaaaaaaaaaaaa</span>'
+    };
+    var Child2 = {
+        template:'<div>bbbbsbbbb2b2bbb</div>'
+    };
+    var v = new Vue({
+        el:'#ky',
+        components:{
+            'kspan':Child,
+            'kdiv':Child2
+        }
+    })
+</script>
+</html>

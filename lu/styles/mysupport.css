@@ -1,0 +1,35 @@
+.my-supportlist li{
+	margin:20px 0;
+	overflow: hidden;
+}
+.my-supportlist .info-right{
+	margin-left:5px;
+	margin-top:15px;
+	font-size: 17px;
+}
+.my-supportlist .user-icon-wrap{
+	width: 50px;
+	height: 50px;
+	border:1px solid #e6e6e6;
+}
+.my-supportlist .icon-v:after{
+	padding:8px;
+}
+.my-supportlist .info-center{
+	margin-top:5px;
+}
+.transfer-list li{
+	margin:0 0 20px;
+}
+.transfer-list li p{
+	margin:20px 0;
+	color:#999;
+}
+.transfer-list li span{
+	margin-left:10px;
+}
+.transfer-proof{
+	padding-left:18px;
+	background: url("/images/icons/icon_proof.png") no-repeat left center;
+	background-size: 13px;
+}

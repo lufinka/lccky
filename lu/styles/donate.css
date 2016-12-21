@@ -1,0 +1,97 @@
+*{box-sizing: border-box;}
+body{}
+.of{overflow: hidden;width: 100%;}
+.fl{float: left;}
+.fr{float: right;}
+.header{width: 100%;min-height: 50px; position: relative;}
+.header img{width: 100%;z-index: -1;}
+.header p{ position: absolute;font-size: 15px;color: #6c5028;top: 50%;right: 0;padding-right: 41px;height: 18px;line-height: 18px;margin-top: -9px;}
+.header p span{font-size: 21px;color: #ff5502;}
+
+.don-list{width: 100%; margin-bottom: 20px;overflow: hidden;}
+.don-list:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.don-list h2{margin-bottom: 0;}
+.don-list .title{border-bottom: 1px solid #e4e4e4;width: 100%;padding: 12px 10px;font-size: 14px;color: #4d4d4d;}
+.don-list .title span{font-size: 15px;color: #000;}
+.don-list li{width: 100%;background-color: #fff;border-bottom: 1px solid #f5f5f5;}
+.don-list li a{display: block;padding:13px 14px;}
+.don-list li a:active{background-color: #f8f8f8;}
+.don-list li .caption{font-size: 15px;color: #333;display: inline-block;position: relative;}
+.don-list li .i:before{content: attr(data-i); width: 50px;height: 15px;position: absolute;background-repeat: no-repeat; background-image: url(/images/icons/icon_mark.png); background-size: 50px 15px;right: -55px;top: -5px;}
+.don-list li .date{font-size: 11px;color: #999;}
+.don-list li .money{color: #ea3e3e;font-size: 12px;}
+.don-list li .status{color: #3c9e1a;font-size: 12px;}
+
+.empty{text-align: center;font-size: 15px;color: #b0b0b0;}
+.icon-empty{width: 40%;padding: 46px 0 14px;}
+.empty .cont{padding-bottom: 70px;}
+
+.mabe-interest{width: 100%; overflow: hidden;text-align: left;}
+.mabe-interest .title{padding: 14px 10px;background-color: #fff;border-top: 1px solid #ededed;}
+.mabe-interest .title p{font-size: 16px;color: #8a8a8a;border-left: 3px solid #e83948; padding-left: 7px;font-weight: normal;}
+
+.ui-into{ position: relative;}
+.ui-into:after{content:""; top:50%; margin-top:-7px; position:absolute;right:10px; width:7px; height:14px;background-image: url(../images/icons/icon_into_my.png);background-repeat: no-repeat;background-position: right center;background-size: 7px auto;}
+
+.detail-header{width: 100%;background-color: #fff;}
+.detail-header .title{width: 100%;font-size: 14px;color: #333;border-bottom: 1px solid #f2f2f2;}
+.detail-header a{display: block;padding: 15px;}
+.detail-header a:active{background-color: #f8f8f8;}
+.detail-header .video{position: relative;}
+.detail-header .video:before{content: ""; position: absolute; width: 23px;height: 16px;background-image: url(../images/icons/icon_video.png); background-repeat: no-repeat; background-size: 23px 16px; top: 50%;margin-top: -8px;right: 25px;}
+.money2{padding: 15px; overflow: hidden;height: 50px;line-height: 20px;}
+.money2 p{float: left;font-size: 10px;color: #9f9f9f;}
+.money2 span{float: right;font-size: 20px;color: #252525;}
+.money2 span i{font-size: 10px;color: #9f9f9f;padding-left: 2px;}
+
+.detail-list{background-color: #fff;padding: 15px;line-height: 30px;color: #333;margin: 15px 0;}
+.detail-list p{overflow: hidden;}
+.detail-list .fl{color: #9f9f9f;}
+.detail-list .status-success{color: #3c9e1a;}
+
+.back{background-color: #fff;text-align: center;font-size: 14px;color: #252525;padding: 15px;}
+.back:active{background-color: #f8f8f8;}
+
+.notPay{color: #999;}
+.successPay{color: #3c9e1a;}
+.failPay{color: #999;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

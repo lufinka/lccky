@@ -1,0 +1,30 @@
+.login-page{
+	background:#f5f5f5;
+}
+.app-logintype{
+	margin:30px 50px 10px;
+	text-align: center;
+}
+.login-type{
+	margin-top:30px;
+}
+.login-type .box{
+	padding-top:60px;
+	background: url("/images/icons/icon_wechat.png") no-repeat center top;
+	background-size: 50px;
+	color:#666;
+}
+.login-type .wb-login{
+	background-image:url("/images/icons/icon_weibo.png");
+}
+.login-page .ui-form-contain{
+	border:1px solid #e6e6e6;
+	border-radius:3px;
+}
+.login-form-wrap{
+	margin:0 20px;
+}
+.login-page .ui-btn-submit{
+	width: 100%;
+}
+.form-code{margin-bottom: 5px;}

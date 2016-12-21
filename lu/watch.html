@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="ky" v-on:click="changeHtml" v-html="a"></div>
+</body>
+<script src="vue.min.js"></script>
+<script>
+    var v = new Vue({
+        el:'.ky',
+        data:{
+            a:1
+        },methods:{
+            changeHtml:function(){
+                /*Vue.set(this._data,'a',123);*/
+                //Vue 不允许动态添加根级响应式属性
+                this._data = Object.assign({},this.$data,{ a: 1, b: 2 });
+                console.log(this)
+            }
+        }
+    });
+    /*Vue.set(v.$data,'b',123);*/
+    /*v.$set('a',12345);*/
+</script>
+
+</html>

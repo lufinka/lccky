@@ -1,0 +1,95 @@
+.tips{
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	color: #999;
+	font-size: 12px;
+}
+.content{
+	position: relative;
+}
+.fild-contain{
+	padding: 0 10px;
+	height: 55px;
+	font-size: 15px;
+	line-height: 55px;
+	border-bottom: #e5e5e5 1px solid;
+	background: #fff;
+	overflow: hidden;
+}
+.fild-contain label{
+	float: left;
+	height: 55px;
+	line-height: 55px;
+	width: 80px;
+	color: #333;
+}
+.fild-contain input{
+	float: right;
+	width: 60%;
+	height: 55px;
+	line-height: 55px;
+	font-size: 15px;
+	text-align: right;
+	border: none;
+}
+.fild-contain input[readonly]{
+	color: #999;
+}
+.fild-contain span{
+	float: right;
+	height: 55px;
+	width: 80px;
+}
+.picture-code div,.phone div{
+	margin-left:80px;
+	margin-right: 90px;
+	overflow: hidden;
+}
+.picture-code input,.phone input{
+	width: 100%;
+}
+.fild-contain .get-picturecode{
+	margin-top: 8px;
+	width: 85px;
+	height: 38px;
+}
+.fild-contain .get-verifycode{
+	margin-top: 13px;
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	border: #dc4646 1px solid;
+	color: #dc4646;
+	border-radius: 15px;
+	text-align: center;
+}
+.fild-contain .disabled{
+	border-color: #999;
+	color: #999;
+	background: none;
+}
+.submit-btn{
+	margin: 25px;
+	margin-top: 40px;
+	height: 44px;
+	line-height: 44px;
+	color: #fff;
+	font-size: 18px;
+	background: #dc4646;
+	text-align: center;
+	border-radius: 44px;
+}
+.submit-btn.disabled{
+	background: #ccc;
+}
+.err-msg{
+	position: absolute;
+	left: 0;
+	bottom: 55px;
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 12px;
+	color: #dc4646;
+	box-sizing:border-box;
+}

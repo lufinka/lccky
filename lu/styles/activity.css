@@ -1,0 +1,161 @@
+body{
+	padding-top:30px;
+	background: #f2f2f2;
+}
+.ui-tab-titles {
+	font-size: 15px;
+}
+.ui-tab-titles li{
+	padding: 0;
+	margin: 0;
+	height: 40px;
+}
+.ui-tab-titles .active{
+	color: #d5454c;
+	border: none !important;
+}
+.ui-tab-titles li p{
+	margin: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	box-sizing:border-box;
+}
+.ui-tab-titles .active p{
+	border-bottom: 2px solid #d5454c;
+}
+.activity-content .has-data{
+	padding: 10px;
+}
+.activity-content .act-amount{
+	color: #999;
+	line-height: 40px;
+}
+.activity-content .act-amount .black{
+	color: #333;
+}
+.activity-lists li{
+	position: relative;
+	padding:15px 10px;
+	margin-bottom: 15px;
+	height: 135px;
+	line-height: 23px;
+	background: #fff;
+	border-radius: 5px;
+	border: #eee 1px solid;
+	box-sizing:border-box;
+}
+.activity-lists li p{
+	font-size: 12px;
+	color: #999;
+}
+.activity-lists li .act-title{
+	font-size: 16px;
+	color: #333;
+}
+.activity-lists li .act-location{
+	padding-left: 13px;
+	background: url('/images/icons/icon-grey-location.png') no-repeat left center;
+	background-size: 9px 11.5px;
+}
+.activity-lists li .act-time{
+	padding-left: 13px;
+	background: url('/images/icons/icon-grey-time.png') no-repeat left center;
+	background-size: 11px 11.5px;
+}
+.activity-lists li .act-state{
+	position: absolute;
+	top: 16px;
+	right: 10px;
+	height: 20px;
+	width: 50px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 10px;
+	color: #fff;
+	border-radius: 15px;
+}
+.waiting-state{
+	background:#ff9603;
+}
+.ongoing-state{
+	background: #26b05b;
+}
+.tobeevaluates-state{
+	background: #f24f4f;
+}
+.finish-state,.cancel-state{
+	background: #c3c3c3;
+}
+.activity-lists li .act-enter{
+	margin-top: 5px;
+	padding-top: 5px;
+	font-size: 12px;
+	border-top: #eee 1px solid;
+	overflow: hidden;
+}
+.activity-lists li .enter-state{
+	color: #c3c3c3;
+}
+.activity-lists li span.red{
+	color: #f24f4f;
+}
+.create-content li .enter-state{
+	color: #333;
+}
+.activity-lists li .grey{
+	color: #c3c3c3;
+}
+.activity-lists li .enter-time{
+	color: #999;
+}
+/*参与活动为空样式*/
+.attend-empty .mabe-interest{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 240px;
+	background: #fff;
+}
+.attend-empty .mabe-interest .title{
+	border-bottom: #eee 1px solid;
+}
+.attend-empty .ui-projectcard .blkcover{
+	height: 170px;
+}
+.attend-empty .subinfo .act-location{
+	padding-left: 15px;
+	background: url('/images/icons/icon_location.png') no-repeat left center;
+	background-size: 12px 12px;
+}
+.attend-empty .subinfo .act-time{
+	padding-left: 15px;
+	background: url('/images/icons/icon_time.png') no-repeat left center;
+	background-size: 12px 12px;
+}
+.create-empty .create-activity{
+	margin: -20px auto 0;
+	width: 220px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 40px;
+	border: #e84548 2px solid;
+	font-size: 17px;
+	color: #e84548;
+}
+
+/*加载样式*/
+.center-loading,.bottom-loading,.no-more{
+	padding-top: 50%;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #999;
+}
+.center-loading img,.bottom-loading img{
+	padding-right: 3px;
+	vertical-align: middle;
+}
+.bottom-loading{
+	padding-top: 5px;
+}

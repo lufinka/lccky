@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="ky">
+        <ul>
+            <li v-for="i in arr" v-html="i"></li>
+        </ul>
+    </div>
+</body>
+<script src="vue.min.js"></script>
+<script>
+    var vv = new Vue({
+        el: '#ky',
+        data: function() {
+            var obj = {arr:[]};
+            for (var i = 0, ll = 100; i < ll; i++) {
+                obj.arr.push(i);
+            }
+            return obj;
+        }
+    });
+</script>
+
+</html>

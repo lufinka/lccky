@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       var a = function(n){
+           return n-10;
+       }
+       var b = function(n){
+           return a.apply(this,[n]);
+       }
+       console.log(b(33))
+    </script>
+</body>
+
+</html>

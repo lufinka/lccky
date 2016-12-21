@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="ky" v-html="info.content"></div>
+</body>
+<script src="jquery-1.11.1.min.js"></script>
+<script src="vue.min.js"></script>
+<script>
+    var v = new Vue({
+        el: '.ky',
+        data: {
+            info: {"content":"222","images":[]}
+        },watch:{
+            info:function(newValue, oldValue){
+                console.log(newValue, oldValue)
+                /*$('.ky').html(info.content)*/
+            }
+        }
+    });
+    $('.ky').click(function(){
+       v.$data.info.content = "asd";
+        console.log(v.$data.info.content)
+    });
+</script>
+
+</html>

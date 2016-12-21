@@ -1,0 +1,120 @@
+body{padding-bottom: 60px;}
+.letter-card{
+	position: relative;
+}
+.detail-userinfo{
+	padding:0;
+}
+.letter-card:before{
+	content:"";
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height:5px;
+	background: url("/images/letter_bg.png") repeat-x;
+	background-size: 58px 5px;
+}
+.letter-content{
+	padding-bottom: 50px;
+	background: url("/images/youpiao.png") no-repeat 95% bottom;
+	background-size: 65px;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+.letter-card-bottom{
+	margin-top:10px;
+	border-top:1px solid #e6e6e6;
+	position: relative;
+}
+.letter-card-bottom .box{
+	padding:15px 0 0;
+}
+.letter-card-bottom:before,.letter-card-bottom:after{
+	content:"";
+	position: absolute;
+	top:-4px;
+	left:50%;
+	width: 8px;
+	height: 8px;
+	border:1px solid #e6e6e6;
+	border-radius: 50%;
+}
+.letter-card-bottom:after{
+	left:51%;
+	top:-5px;
+}
+.project-left{
+	width: 80px;
+	margin-right: 10px;
+}
+.project-support .user-icon-wrap{
+	width: 15%;
+	height: auto;
+	margin-left:0;
+	margin-right: 1.5%;
+	margin-bottom: 5px;
+	position: relative;
+}
+.project-support .user-icon{
+	width: 100%;
+	height: 100%;
+}
+.project-support .icon-v:after{
+	width: 8px;
+	height: 8px;
+	right:0;
+}
+.project-support .user-icon-wrap b{
+	visibility: hidden;
+}
+.project-support .user-icon-wrap:nth-child(6) .user-icon{
+	 -webkit-filter: brightness(50%);
+}
+.project-support .user-icon-wrap:nth-child(6) b{
+	position: absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	height: 1px;
+	color:#fff;
+	font-size: 20px;
+	font-weight: bold;
+	z-index:0;
+	visibility:visible;
+}
+.tip-comment{
+	margin-top:10px;
+	padding:10px;
+	background: #f5f5f5;
+	color:#666;
+	border-radius:3px;
+	position: relative;
+}
+.tip-comment i{
+	position: absolute;
+	top:-20px;
+	left:6%;
+	display: block;
+	width: 0;
+	height: 0;
+	border-top:10px solid transparent !important;
+	border-left:8px solid transparent !important;
+	border-right:8px solid transparent !important;
+	border-bottom:10px solid #f5f5f5 !important;
+}
+
+.commentpanel{padding:15px 0px;background:#FFFFFF;}
+.commentpanel h2{padding:0 15px;}
+.commentpanel h2 span{float:right;padding:5px 22px;margin-top:-4px;line-height:14px;font-size:14px;color:#de4441;border-radius:14px;border:1px solid #DE4441}
+.view-all{
+	display: block;
+	width: 80%;
+	margin:20px auto;
+	padding:10px 0;
+	border:1px solid #e6e6e6;
+	border-radius:20px;
+	text-align: center;
+	color:#999;
+}

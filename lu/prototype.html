@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ky = function() {
+            this.name = "ykang";
+            this.age = 25;
+            this.sex = 'male';
+        };
+        ky.prototype.setname = function(v) {
+            this.name = v;
+            console.log(this.name);
+        };
+        var kk = function() {
+            this.name = "kkang";
+            this.age = 27;
+            this.sex = 'male';
+        }; 
+        
+        kk.prototype.init = function(){
+            this.kjc = new ky();
+        }
+        
+        kk.show = function(){
+            kk._instance_ = new kk();
+            kk._instance_.init();
+            console.log(kk._instance_)
+        }
+        kk.show();
+        console.log(kk._instance_)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+body{min-height: 0;}
+.white-bg{
+	background: #fff;
+}
+.sort-tabs .ui-tab-content{
+	margin-top:54px;
+}
+.ui-tab-title .sub-title{
+	margin-top:2px;
+	font-size: 12px;
+}
+.sort-banner{
+	background: url("/images/project/sort_bg.jpg") no-repeat center center;
+	background-size: cover;
+}
+.sort-info .box{
+	padding:40px 0;
+	color:#efc0b4;
+}
+.sort-info .user-icon{
+	display: inline-block;
+	width: 62px;
+	height: 62px;
+	margin-top:-10px;
+	border:2px solid #fff !important;
+}
+.sort-info .sort-num{
+	margin-top:10px;
+	font-size: 20px;
+	color:#fff;
+}
+.sort-list{
+	padding-top:0;
+}
+.sort-list .avatarwarp{
+	width: 50px;
+	height: 50px;
+	margin:0 5px;
+	background: url("/images/icons/person.png") no-repeat center center;
+	background-size: cover;
+	border-radius:50%;
+}
+.sort-list font{
+	color:#b5151b;
+}
+.sort-list .rtperson{
+	padding:12px 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+.nojoin{
+	filter:grayscale(0.8);
+	-webkit-filter:grayscale(0.8);
+}
+.nosort{
+	background-image: url("/images/project/sort_dark_bg.jpg");
+}
+.sort-list .rtperson img{
+	margin:0 5px 0 0;
+}
+.sort-list .rtperson .nmdtl{
+	margin-left: 5px;
+}
+.sort-list .avatarwarp .user-icon{
+	width:100%;
+	height:100%;
+}

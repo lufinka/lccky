@@ -1,0 +1,36 @@
+*{box-sizing: border-box;}
+.wraning{width: 100%;text-align: center;background-color: #fae9b6;font-size: 13px;color: #ae7322;line-height: 20px;border-bottom: 1px solid #f5f5f5;padding: 8px 0;}
+.reason{width: 100%;background-color: #fff;border: none;padding: 10px;min-height: 200px;font-size: 16px;color: #666;}
+.ensure{margin: 30px 36px 0;}
+.ensure .btn{padding: 13px 0;width: 100%;text-align: center;color: #fff;border-radius: 25px;-moz-border-radius: 25px;font-size: 18px;background-color: #dc4646;}
+.ensure .btn:active{background-color: #e06565;}
+
+/*取消报名*/
+.checkbox h2{font-size: 12px;margin: 0;color: #999;width: 100%;padding: 6px 10px;line-height: 20px;font-weight: normal;}
+.checkbox ul{background-color: #fff;overflow: hidden;}
+.checkbox ul li{width: 100%;font-size: 15px;color: #333;text-indent: 19px;position: relative;}
+.checkbox ul li:after{content: ""; position: absolute;width: 14px;height: 14px;border: 1px solid #999;top: 50%;margin-top: -7px;right: 16px;}
+.checkbox ul li:before{content: "";width: 15px;height: 13px;background-image: url(../images/icons/icon_check.png); background-repeat: no-repeat; background-size: 15px auto;position: absolute;top: 50%;margin-top: -7px;right: 13px;display: none;}
+.checkbox ul li.active:before{display: block;}
+.checkbox ul li p{position: relative;padding: 12px 0;}
+.checkbox ul li p:after{content: ""; position: absolute; left: 12px;bottom: 0;right: 0;height: 1px;border-bottom: 1px solid #e5e5e5;}
+.checkbox ul li:last-child p:after{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="example" >
+        <examp2le></examp2le>
+    </div>
+</body>
+<script src="vue.min.js"></script>
+<script>
+    Vue.component('examp2le', {
+        template: '<span v-on:click="updateMessage">{{ message }}</span>',
+        data: function() {
+            return {
+                message: 'not updated'
+            }
+        },
+        methods: {
+            updateMessage: function() {
+                this.message = 'updated'
+                console.log(this.$el.textContent) // => 'not updated'
+                this.$nextTick(function() {
+                    console.log(this.$el.textContent) // => 'updated'
+                })
+            }
+        }
+    })
+    
+    new Vue({
+        el: '#example'
+    });
+</script>
+
+</html>

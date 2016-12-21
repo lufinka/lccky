@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="vue.min.js"></script>
+    <style>
+        .user-avatar{display: block;width: 50px;height: 50px;overflow: hidden;background-size: 50px 50px;}
+    </style>
+</head>
+
+<body>
+    <div id="ul">
+        <lufinka v-for="item in items" :item="item"></lufinka>
+    </div>
+    <script>
+        var data = {
+            items: [{
+                'avatar': 'http://img5.imgtn.bdimg.com/it/u=3245622106,3393111959&fm=21&gp=0.jpg'
+            }, {
+                'avatar': 'http://img5.imgtn.bdimg.com/it/u=3245622106,3393111959&fm=21&gp=0.jpg'
+            }]
+        }
+        Vue.component('lufinka', {
+            props: ['item'],
+            template: `<span class="user-avatar" style="background-image:url({{item.avatar}})"></span>`
+        });
+        var vv = new Vue({
+            el:'#ul',
+            data:data
+        })
+    </script>
+</body>
+
+</html>

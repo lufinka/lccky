@@ -1,0 +1,51 @@
+.p-activitycreate{}
+.p-activitycreate .pccreatelink{padding:0 10px;height:45px;line-height:45px;color:#666666;font-size:14px;border-bottom:1px solid #CCCCCC;}
+.p-activitycreate .pccreatelink a{color:#666666;}
+/* 上传eventbanner */
+.p-activitycreate .banneruploader{position:relative;margin:10px;background-color:white;height:170px;border:1px dashed #CCCCCC;}
+.p-activitycreate .banneruploader .addicon{margin:65px 0 12px;height:16px;background-image:url(/images/event/banner_imgadd.png);background-size:16px 16px;background-position:center center;background-repeat:no-repeat;}
+.p-activitycreate .banneruploader .addlabel{font-size:14px;color:#CCCCCC;line-height:14px;text-align:center;}
+.p-activitycreate .banneruploader .bannerholder,.p-activitycreate .banneruploader input{position:absolute;top:0;left:0;width:100%;height:100%;}
+.p-activitycreate .banneruploader .bannerholder{background-size:cover;background-repeat:no-repeat;background-position:center center;}
+.p-activitycreate .banneruploader input{opacity:0;z-index:1;}
+
+/* activity 字段 */
+.p-activitycreate .imagepickers{position:relative;padding:20px 0;height:21px;line-height:21px;font-size:15px;color:#cccccc;}
+.p-activitycreate .uploadholder{display:inline-block;margin-top:-2px;vertical-align:middle;width:25px;height:21px;background-size:100%;background-image:url(/images/event/upload_camera.png);}
+.p-activitycreate  .imagepickers input{position:absolute;top:20px;left:0px;width:130px;height:23px;opacity:0;}
+.p-activitycreate .tagitem{padding:4px 6px;font-size:12px;line-height:12px;border-radius:10px;border:1px solid #dc4646;color:#dc4646;margin-left:10px;}
+.p-activitycreate .tagselector{overflow:hidden;margin-top:-10px;padding-bottom:5px;}
+.p-activitycreate .tagselector li{float:left;margin:8px 2% 8px 0;width:32%;height:30px;line-height:30px;text-align:center;box-sizing:border-box;border:1px solid #CCCCCC;color:#CCCCCC;border-radius:15px;}
+.p-activitycreate .tagselector li.active{border:1px solid #DE4441;color:#FFFFFF;background:#DE4441;}
+.p-activitycreate .tagselector li:nth-child(3n+0){margin-right:0px;}
+.p-activitycreate .tiplabel{padding:10px;margin-top:-13px;font-size:12px;color:#999999;}
+.p-activitycreate .ui-icon-radio{vertical-align:middle;margin:-3px 3px 0 0;width:13px;height:13px;}
+.p-activitycreate .ui-icon-radio.active{background-image:url(/images/icons/icon_radio_checked2.png);}
+
+.p-activitycreate .applypanel{overflow:hidden;-webkit-transition: all 0.3s;}
+.p-activitycreate .applypanel.applyeclipse{height:54px;}
+
+/* footer */
+.p-activitycreate footer{display:box;display:-webkit-box;overflow:hidden;position:fixed;bottom:0;width:100%;z-index:50;}
+.p-activitycreate footer .btn{display:block;box-sizing:border-box;height:50px;line-height:50px;text-align:center;font-size:18px;}
+.p-activitycreate footer .btn.ltbtn{background:white;border-top:1px solid #CCCCCC;}
+.p-activitycreate footer .btn.rtbrn{background:#DE4441;color:white;box-flex:1;-webkit-box-flex:1;}
+
+/* 活动领域选择 */
+.fieldselector{overflow:hidden;padding-bottom:5px;}
+.fieldselector li{float:left;margin:8px 2% 8px 0;width:32%;height:30px;line-height:30px;text-align:center;box-sizing:border-box;border:1px solid #CCCCCC;color:#CCCCCC;border-radius:15px;}
+.fieldselector li.active{border:1px solid #DE4441;color:#FFFFFF;background:#DE4441;}
+.fieldselector li:nth-child(3n+0){margin-right:0px;}
+
+/* 关联项目样式  */
+.p-activitycreate .linkproject{display:block;position:fixed;top:0;left:0;width:100%;height:100%;z-index:100;background:#F5F5F5;}
+.p-activitycreate .linkproject .searchbox{position:absolute;top:0px;width:100%;padding:9px 20px;z-index:1;background:#F5F5F5;box-sizing:border-box;}
+.p-activitycreate .linkproject .searchbox input{padding:0 15px;width:100%;height:32px;font-size:14px;box-sizing:border-box;border:1px solid #CCCCCC;border-radius:16px;}
+.p-activitycreate .linkproject .projectlist{position:absolute;top:50px;bottom:70px;width:100%;}
+.p-activitycreate .linkproject .confirmbtn{position:absolute;bottom:0;z-index:1;width:100%;height:50px;line-height:50px;font-size:18px;text-align:center;background: #DE4441;color:white;}
+.p-activitycreate .linkproject .ui-projectcard .selectedcover{display:none;position:absolute;z-index:1;width:100%;height:100%;background-color: rgba(0,0,0,0.6);background-image:url(/images/event/project_select.png);background-size:45px 45px;background-position:center center;background-repeat:no-repeat;}
+.p-activitycreate .linkproject .ui-projectcard.projectselected .selectedcover{display:block;}
+
+.p-activitycreate .activity_preview{z-index:99999;position:fixed;top:0px;left:0px;height:100%;width:100%;background:rgba(0,0,0,0.5);}
+.p-activitycreate .activity_preview iframe{height:90%;width:90%;margin:5%;border:none;box-shadow:0 0 10px #FFF;-webkit-box-shadow:0 0 10px #FFF;background:white;}
+.p-activitycreate .activity_preview .closebtn{-webkit-box-shadow:0 0 10px #000;background-repeat:no-repeat;top:2%;background-size:16px 16px;height:20px;right:2%;position: absolute;width:20px;display:inline-block;background-image:url(/images/icons/icon_close.png);background-color:white;border-radius:50%;background-position:center center;}

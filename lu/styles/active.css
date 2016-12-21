@@ -1,0 +1,53 @@
+*{box-sizing: border-box;}
+
+.table{display: table;}
+.cell{display: table-cell; vertical-align: middle;}
+
+.header{width: 100%;height: 120px;background-image: url(../images/personal/active/header_bg.jpg); background-repeat: no-repeat; background-size: 100% auto; background-position: top;text-align: center;color: #fff;font-size: 13px;}
+.header .cell{width: 33.33%;}
+.header h2{color: rgba(255,255,255,.5);font-size: 24px;padding-bottom: 5px;font-weight: 200;}
+.header h3{font-weight: normal;width: 100%;}
+
+.active-handle{width: 100%;background-color: #fff;margin-bottom: 65px;}
+.active-handle:after{content: ""; clear: both;height: 0;visibility: hidden;display: block;}
+.active-handle li{width: 33.33%;border-right: 1px solid #e5e5e5;text-align: center;height: 125px;font-size: 15px;color: #ccc;border-bottom:1px solid #e5e5e5;float: left;background-repeat: no-repeat; background-position: center 34px;background-size: 26px auto; position: relative;}
+.active-handle li.active,.active-handle li.active a{color: #333;}
+.active-handle li.active:active{background-color: #f8f8f8;}
+.active-handle li.no-border-right{border-right:none;}
+.active-handle li.no-border-botton{border-bottom:none;}
+.active-handle li.handler{padding-top: 70px;}
+.active-handle li a{display: block;padding-top: 70px;color: #ccc;height: 125px;}
+.active-handle li.publish{background-image: url(../images/icons/icon_active_no_publish.png);}
+.active-handle li.publish:before{content: attr(data-publish); position: absolute;left: 0;right: 0;top: 70px;}
+.active-handle li.active.publish{background-image: url(../images/icons/icon_active_publish.png);}
+.active-handle li.cancel{background-image: url(../images/icons/icon_cancel2.png);}
+.active-handle li.cancel:before{content: attr(data-cancel); position: absolute;left: 0;right: 0;top: 70px;}
+.active-handle li.active.cancel{background-image: url(../images/icons/icon_active_cancel2.png);}
+.active-handle li.edit{background-image: url(../images/icons/icon_active_no_edit.png);}
+.active-handle li.active.edit{background-image: url(../images/icons/icon_active_edit.png);}
+.active-handle li.delete{background-image: url(../images/icons/icon_active_no_delete.png);}
+.active-handle li.active.delete{background-image: url(../images/icons/icon_active_delete.png);}
+.active-handle li.end{background-image: url(../images/icons/icon_active_no_end.png);}
+.active-handle li.end:before{content: attr(data-end); position: absolute;left: 0;right: 0;top: 70px;}
+.active-handle li.active.start{background-image: url(../images/icons/icon_start.png);}
+.active-handle li.start:before{content: attr(data-start); position: absolute;left: 0;right: 0;top: 70px;}
+.active-handle li.active.pause{background-image: url(../images/icons/icon_pause.png);}
+.active-handle li.pause:before{content: attr(data-pause); position: absolute;left: 0;right: 0;top: 70px;}
+.active-handle li.meber{background-image: url(../images/icons/icon_active_no_meber.png);}
+.active-handle li.active.meber{background-image: url(../images/icons/icon_active_meber.png);}
+.active-handle li.update{background-image: url(../images/icons/icon_active_no_update.png);}
+.active-handle li.active.update{background-image: url(../images/icons/icon_active_update.png);}
+.active-handle li.sign{background-image: url(../images/icons/icon_active_no_sign.png);}
+.active-handle li.active.sign{background-image: url(../images/icons/icon_active_sign.png);}
+.active-handle li.commit{background-image: url(../images/icons/icon_active_no_commit.png);}
+.active-handle li.active.commit{background-image: url(../images/icons/icon_active_commit.png);}
+
+.more-question{width: 100%;text-align: center;}
+.more-question a{color: #0a82c8;font-size: 13px;}
+.more-question a:active{text-decoration: none;opacity: 0.8;}
+
+.dahuo-modal .modal-body h2{text-align: center;font-size: 16px;padding-bottom: 5px;}
+.dahuo-modal .modal-body p{text-align: center;font-size: 16px;padding-bottom: 15px;}
+.modal-footer div{width: 50%;float: left;}
+.modal-cancel{border-right: 1px solid #ddd;}
+.modal-confirm{color: #eb4343;}

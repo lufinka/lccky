@@ -1,0 +1,124 @@
+.active-circle-page{
+	background: #fff;
+}
+.active-comment-contain{
+	border-top:1px solid #e5e5e5;
+}
+.circle-footer{
+	padding:15px 0;
+	background: #f0f0f0;
+	color:#999;
+	text-align: center;
+}
+/*评论区公共样式*/
+.ui-btn-comment{
+    padding: 5px 22px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #de4441;
+    border-radius: 14px;
+    border: 1px solid #DE4441;
+}
+.ui-comment-header .user-name{
+	font-size: 15px;
+}
+.ui-comment-wrap{
+	margin:10px 10px 10px 50px;
+	color:#666;
+}
+.ui-comment-piclist {
+	margin:10px 0;
+	overflow: hidden;
+}
+.ui-comment-piclist li{
+	float: left;
+	width: 31.3%;
+	height: 100px;
+	max-width: 200px;
+	max-height: 200px;
+	margin-right: 2%;
+	overflow: hidden;
+}
+.ui-comment-piclist li img{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+.ui-comment-location{
+	margin:5px 0;
+	font-size: 12px;
+	color:#999;
+}
+.ui-comment-bottom{
+	margin:0 0 10px;
+	padding:10px 0;
+	border-bottom:1px solid #e5e5e5;
+}
+.ui-comment-stastic{
+	float: right;
+}
+.icon-localtion{
+	display: inline-block;
+	vertical-align: middle;
+	width: 12px;
+	height: 12px;
+	margin-right: 3px;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAY1BMVEUAAACZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmQGJZ5AAAAIHRSTlMABLv41ua1WDOvm4wkHuqVTzwN29HKhxjzg3t4cmBJLSt97I8AAADESURBVCjPnZBXEoMwDETlig2YHnrR/U8ZBImGIfnifciy1jvaMTzHJdIYmZS3cZWjbKOolWi76zyYej27tTYBGNE0FXubl2BhwZRk52jkcGFB2r10GlHTAitZyMa9xDoEHe/NmLGgZrJ5AE+PZ8WCzvdSoJRYHFYWEkNbyzguKYPJWUgxAqZAB4w3nF3UFJEtavq2k0rhwtB/rqFP4IrQ50eIl6bzwqbyI5/a4EZEyQoqd1pVOjXAL8JnmYd/VNbS4se8ATphB8I36rG1AAAAAElFTkSuQmCC") no-repeat center center;
+	background-size: 12px;
+}
+.icon-support{
+	width: 16px;
+	height: 16px;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAYFBMVEUAAACZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnx1IImAAAAH3RSTlMALHjZzCP208BJMxTu36+il5JkGg0Gw7aKgXBbT+qr4jOMIwAAALRJREFUOMutz9kOgyAURVGsKCLO89Se///LFogPVeAmTfcTyVkhwH4oqcQa2kcBYAsAiU9xAMwaFIEXgLihNaD27jlMu2/vYwuUZ49KmCbPfqSwPZzzuOCsbWpepnwd7Lsyfuj/cdyqDBBAOrCkgKNEA32I2AOucgooAsSMABUFdgooAhSMABkFOgLMjAA5BYYvsLmeaMuA58h6cdnT6AR9W5uzbOLLF+4p2S3NxIHyJdm/egOkWziPWOb8zAAAAABJRU5ErkJggg==") no-repeat center center;
+	background-size: 16px;
+}
+.icon-comment2{
+	width: 16px;
+	height: 16px;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAACZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZkzCTtbAAAAFXRSTlMA+2YYMw8K78C9t65FId7VpXtjPy2N/pbMAAAAjklEQVQ4y83RyQ7DMAhFUfAQD7Ezv///1aJkUbWyUbvz2bC5EhLQGK4U0BTSRcIxuthJEKGIEjAULAFUIwXxdDNEdi5DzO6MH4Elmhjg6T1tM/BEvhnkajeI2dp71WZrHu4OXb+8e4FikeCA4iCxMzp4p5sv5pFwS+ZRPH3xK8TqqasGIFRSFOZCKmPoTy9rlzLnCr+I3AAAAABJRU5ErkJggg==") no-repeat center center;
+	background-size: 16px;
+}
+.ui-comment-reply{
+	padding-left:20px;
+}
+.ui-comment-reply ul{
+	position: relative;
+}
+.ui-comment-reply ul:before{
+	content:"";
+	position: absolute;
+	top:3px;
+	left:-20px;
+	width: 16px;
+	height: 14px;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAcCAMAAAA3HE0QAAAAVFBMVEUAAAAKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsgKgsjoQB4dAAAAG3RSTlMAzJky+OQ8GbOsk0sJ7efae1c2FcO6n4RyY0W+2rl5AAAAhklEQVQoz+3ROxKDMAxF0YeRMdjmm3/e/vcZjwIZCjtVihScStLcTvgF1wmzpHUatCxqNRByrHIsRQNyRtaJXAMUHMEfBr5OPj+sN2ENBirb6HYXKjXoaeLbJc3RcG+CCt4YM7IH3JnszMYH7DxJLJYyo6AhH0K7oBwklcPXoIsoi9f+howXXx8UHyk5L/YAAAAASUVORK5CYII=") no-repeat center center;
+	background-size: cover;
+}
+.ui-comment-reply ul li{
+	margin:3px 0;
+}
+.ui-comment-reply .commenter{
+	color:#0a82c8;
+}
+.view-all{
+	margin:10px 0;
+	color:#0a82c8;
+}
+
+.ui-comment-box{
+	background: #fff;
+}
+.comment-txt{
+	width: 100%;
+	min-height: 150px;
+	margin-top:10px;
+	padding:10px;
+	resize:none;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 380px){
+	.comment-piclist li{
+		height: 90px;
+	}
+}

@@ -1,0 +1,21 @@
+*{box-sizing: border-box;}
+
+.ui-into{ position: relative;}
+.ui-into:after{content:""; top:50%; margin-top:-7px; position:absolute;right:14px; width:7px; height:14px;background-image: url(../images/icons/icon_into_my.png);background-repeat: no-repeat;background-position: right center;background-size: 7px auto;}
+section{padding-top: 15px;}
+.wrap{overflow: hidden;background-color: #fff; margin-bottom: 10px;}
+.border{border-bottom: 1px solid #ededed; overflow: hidden;padding-bottom: 15px;}
+.item{position: relative;float: left;width: 100%;color: #212121;font-size: 16px;}
+.item p{float: right;padding-right: 15px;color: #8a8a8a;height: 20px;}
+.item a{padding: 15px 15px 0;height: 50px;line-height: 20px;display: block;}
+.item:before{content: attr(data-title);width: 30%;height: 20px;font-size: 16px;color: #212121;font-size: 16px;position: absolute;left: 14px;top: 50%;margin-top: -10px;line-height: 20px;text-align: left;}
+.item:active{background-color: #f8f8f8; -webkit-transition: ;-o-transition: 0.218s all;transition: 0.218s all;}
+.update{position: relative;width: 100%;}
+.update:after{content: "";width: 10px;height: 10px;position: absolute;right:15px;top: 50%;margin-top: -5px;background-color: #ff3e3e;border-radius: 999px;-moz-border-radius: 999px;}
+.logout{width: 100%;padding: 15px;background-color: #fff;color: #eb4343;text-align: center;font-size: 15px;letter-spacing: 1px;}
+.logout:active{background-color: #f8f8f8;}
+.logout a:active{text-decoration: none;background-color: #f47575;}
+
+.dahuo-modal .modal-body p{text-align: center;font-size: 16px;padding-bottom: 15px;}
+.modal-footer div{width: 50%;float: left;}
+.modal-cancel{border-right: 1px solid #ddd;}
